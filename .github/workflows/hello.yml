@@ -22,5 +22,4 @@ jobs:
         - name: print hellow
           run: echo "hello world !!"
         - name: print challo
-          run: echo "hello challo !!"
           run: cat /etc/os-release
