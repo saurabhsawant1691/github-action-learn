@@ -2,7 +2,7 @@ name: Learn basic of GitHub Action
 on:
   push:
     branches:
-      -  master
+      -  main
 jobs:
   print-os-release:
     runs-on: ubuntu-latest
