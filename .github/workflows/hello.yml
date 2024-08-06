@@ -3,6 +3,8 @@ on:
   push:
     branches:
       -  main
+env:
+  JDK_VERSION: "openjdk11-jdk"
 jobs:        
   install-java:
     runs-on: ubuntu-latest
@@ -11,5 +13,5 @@ jobs:
     steps:
       - name: install java
         run: |
-          apk add --no-cache openjdk11-jdk
+          apk add --no-cache $JDK_VERSION
           java --version
